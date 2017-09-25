@@ -1,5 +1,5 @@
 #IPND Stage 2 Final Project, Gaetano Barreca
-#I take my time to write this Python project because I was intrigued to see how I could express my knowledge through this language. I am a former Italian teacher as a second language, ready to step forward to a new tech career. I am pleased with the results of this Python project and hope you can enjoy it when reviewing. 
+#I took my time to write this Python project because I was intrigued to see how I could express my knowledge through this language. I am a former Italian teacher as a second language, ready to step forward to a new tech career. I am pleased with the results of this Python project and hope you can enjoy it when reviewing. 
 
 class UserContext:
   user_name = "Gaetano"
