@@ -18,7 +18,7 @@ class UserContext:
 #0. Introduction
 def display_intro_questions(user_context):
   print("Welcome to the 'Italian Learning fill in the blanks quiz'! At the end of the quiz, you will be ready to introduce yourself in Italian and have a basic conversation.")
-  print("\nPlease, type your name below:")
+  print("\nPlease, type your name below: ")
   user_context.user_name=input()
   print("\nCiao " + user_context.user_name + ", benvenuto!(welcome!)")
   print("Please, type an Italian city you'd love to visit")
@@ -28,7 +28,7 @@ def display_intro_questions(user_context):
 
 #1.Italian Learning fill in the blanks quiz
 def display_quiz_text(user_context):
-  print("\nBene, let's start! You have the first move:")
+  print("\nBene, let's start! You have the first move: ")
   
   quiz_text = {'easy': "\n _1_ " + user_context.friend_name+ ", come stai?  \n Ciao " + user_context.user_name + ". Sto bene, grazie! E tu? \n Anche io! \n\n Hi, " + user_context.friend_name + ", how are you? \n Hi " + user_context.user_name + ". I'm good, thanks! And you? \n Me too!\n", 
   'medium':"\n Ciao " + user_context.friend_name + ", come stai?  \n _1_ " + user_context.user_name + ". Sto _2_, grazie! E tu? \n Anche io! Dove vai? \n Sto andando a " + user_context.italian_city + " e _3_? \n _4_ io! \n\n Hi, " + user_context.friend_name + ", how are you? \n Hi " + user_context.user_name + " I am good, thanks! And you? \n Mee too! Where are you going?\n I am going to " + user_context.italian_city + " and you? \n Me too!\n" ,
@@ -42,7 +42,7 @@ def display_quiz_text(user_context):
   
   #3. display different messages
   print(quiz_text[user_context.difficulty])
-  print("What should go instead of the numbers? Separate your answers with commas:")
+  print("What should go instead of the numbers? Separate your answers with commas: ")
   
   user_answers = input()
   is_input_correct = False
@@ -75,7 +75,7 @@ def select_difficulty(user_context):
           is_input_correct = True
           user_context.difficulty = selected_difficulty.lower()
       else:
-          print("\nMamma mia! '" + selected_difficulty + "' is not a proper level option!\nPlease try again:")
+          print("\nMamma mia! '" + selected_difficulty + "' is not a proper level option!\nPlease try again: ")
           selected_difficulty = input(user_prompt)
     
     user_context.difficulty = selected_difficulty.lower()
